@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import Header from "./componentes/Header";
-import Body from "./componentes/Body";
-import Footer from "./componentes/Footer";
-import Error from "./componentes/Error";
-import About from "./componentes/About";
-import Contact from "./componentes/Contact";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Error from "./components/Error";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
