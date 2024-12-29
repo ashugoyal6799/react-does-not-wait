@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Error from "./components/Error";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import UserDetails from "./components/UserDetails";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/users/:id",
+        element: <UserDetails />,
       },
     ],
   },

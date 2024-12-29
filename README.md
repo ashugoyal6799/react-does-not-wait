@@ -1,6 +1,7 @@
 ## Current Functionalities
 
 - three pages Home, About and Contact
+- dynamic routes using useParams
 
 ## Challenge met, Solution set
 
