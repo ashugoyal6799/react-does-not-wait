@@ -7,7 +7,6 @@
   },
   "name": "lec-1",
   "version": "1.0.0",
-  "main": "index.js",
   "devDependencies": {
     "parcel": "^2.13.3",
     "process": "^0.11.10"
