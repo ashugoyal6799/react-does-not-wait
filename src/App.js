@@ -6,6 +6,8 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
 import About from "./components/About";
+import Profile from "./components/Profile";
+import Status from "./components/Status";
 import Contact from "./components/Contact";
 import UserDetails from "./components/UserDetails";
 
@@ -34,6 +36,19 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        /* this is parent for profile, status,,. 
+        so in the outlet one of these component will render based on the route*/
+
+        children: [
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+          {
+            path: "status",
+            element: <Status />,
+          },
+        ],
       },
       {
         path: "/contact",
