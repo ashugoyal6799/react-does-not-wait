@@ -52,7 +52,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <Contact />,
+        element: <Contact name="Ram" />, // passing name as props
       },
       {
         path: "/users/:id",

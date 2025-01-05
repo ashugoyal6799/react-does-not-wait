@@ -1,0 +1,26 @@
+1. Why do we use 'type=module' ? 
+-> To tell browser that the script is a module (so that we can use import, export and other things to make code modular and better)
+-> References:
+    [a]: https://neerajdana.medium.com/understanding-type-module-in-javascript-a-comprehensive-guide-ebb13926da7a
+
+2. Suppose there are two childers componets under a parent component (for class based component , for function components you can replace ComponentDidMount with useEffect)
+[assuming no async call is being made across everywhere in these components]
+logs order:
+
+Parent Constructor
+Parent render
+    First Child Constructor
+    First Child Render
+    Second Child Constructor
+    Second Child Constructor
+    
+    ----DOM UPDATED FOR CHILDREN-----
+
+    First Child ComponentDidMount
+    Second Child componentDidMount
+Parent ComponentDidMount
+
+
+
+3. Why does we can make the `componentDidMount` function as `async` [In class based componentes] but not the make the `useEffect` function as `async` [in Functional Components] ?
+
