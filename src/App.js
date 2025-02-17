@@ -23,45 +23,6 @@ const App = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-        /* this is parent for profile, status,,. 
-        so in the outlet one of these component will render based on the route*/
-
-        children: [
-          {
-            path: "profile",
-            element: <Profile />,
-          },
-          {
-            path: "status",
-            element: <Status />,
-          },
-        ],
-      },
-      {
-        path: "/contact",
-        element: <Contact name="Ram" />, // passing name as props
-      },
-      {
-        path: "/users/:id",
-        element: <UserDetails />,
-      },
-    ],
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(<App />);
